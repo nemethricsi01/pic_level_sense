@@ -1,0 +1,344 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18426 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"71 C:\Users\DELL\MPLABXProjects\radioscope_level_alarm.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+"139
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"146
+[v _adc_read adc_read `(i  1 e 2 0 ]
+"155
+[v _pwm_init pwm_init `(v  1 e 1 0 ]
+"167
+[v _pwm_set pwm_set `(v  1 e 1 0 ]
+"175
+[v _my_isr_routine my_isr_routine `II(v  1 e 1 0 ]
+[s S81 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"426 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f18426.h
+[u S86 . 1 `S81 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES86  1 e 1 @11 ]
+[s S311 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"561
+[u S318 . 1 `S311 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES318  1 e 1 @18 ]
+[s S22 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"611
+[u S29 . 1 `S22 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES29  1 e 1 @20 ]
+[s S229 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"711
+[u S236 . 1 `S229 1 . 1 0 ]
+[v _LATCbits LATCbits `VES236  1 e 1 @26 ]
+"2980
+[v _ADRESL ADRESL `VEuc  1 e 1 @157 ]
+"3108
+[v _ADRESH ADRESH `VEuc  1 e 1 @158 ]
+[s S328 . 1 `uc 1 ADPCH 1 0 :6:0 
+]
+"3257
+[s S330 . 1 `uc 1 ADPCH0 1 0 :1:0 
+`uc 1 ADPCH1 1 0 :1:1 
+`uc 1 ADPCH2 1 0 :1:2 
+`uc 1 ADPCH3 1 0 :1:3 
+`uc 1 ADPCH4 1 0 :1:4 
+`uc 1 ADPCH5 1 0 :1:5 
+]
+[s S337 . 1 `uc 1 PCH 1 0 :6:0 
+]
+[s S339 . 1 `uc 1 PCH0 1 0 :1:0 
+`uc 1 PCH1 1 0 :1:1 
+`uc 1 PCH2 1 0 :1:2 
+`uc 1 PCH3 1 0 :1:3 
+`uc 1 PCH4 1 0 :1:4 
+`uc 1 PCH5 1 0 :1:5 
+]
+[u S346 . 1 `S328 1 . 1 0 `S330 1 . 1 0 `S337 1 . 1 0 `S339 1 . 1 0 ]
+[v _ADPCHbits ADPCHbits `VES346  1 e 1 @159 ]
+[s S246 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"3919
+[s S254 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S262 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+`uc 1 FM1 1 0 :1:3 
+]
+[s S267 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S272 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[u S275 . 1 `S246 1 . 1 0 `S254 1 . 1 0 `S262 1 . 1 0 `S267 1 . 1 0 `S272 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES275  1 e 1 @273 ]
+[s S373 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"10462
+[s S377 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S385 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S389 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S398 . 1 `S373 1 . 1 0 `S377 1 . 1 0 `S385 1 . 1 0 `S389 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES398  1 e 1 @654 ]
+[s S429 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"10605
+[s S434 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S440 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S445 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S451 . 1 `S429 1 . 1 0 `S434 1 . 1 0 `S440 1 . 1 0 `S445 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES451  1 e 1 @655 ]
+[s S479 . 1 `uc 1 CS 1 0 :4:0 
+]
+"10725
+[s S481 . 1 `uc 1 CS0 1 0 :1:0 
+`uc 1 CS1 1 0 :1:1 
+`uc 1 CS2 1 0 :1:2 
+`uc 1 CS3 1 0 :1:3 
+]
+[s S486 . 1 `uc 1 T2CS 1 0 :4:0 
+]
+[s S488 . 1 `uc 1 T2CS0 1 0 :1:0 
+`uc 1 T2CS1 1 0 :1:1 
+`uc 1 T2CS2 1 0 :1:2 
+`uc 1 T2CS3 1 0 :1:3 
+]
+[u S493 . 1 `S479 1 . 1 0 `S481 1 . 1 0 `S486 1 . 1 0 `S488 1 . 1 0 ]
+[v _T2CLKCONbits T2CLKCONbits `VES493  1 e 1 @656 ]
+"12975
+[v _PWM6DC PWM6DC `VEus  1 e 2 @908 ]
+[s S513 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 POL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"13239
+[s S519 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 PWM6POL 1 0 :1:4 
+`uc 1 PWM6OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PWM6EN 1 0 :1:7 
+]
+[u S525 . 1 `S513 1 . 1 0 `S519 1 . 1 0 ]
+[v _PWM6CONbits PWM6CONbits `VES525  1 e 1 @910 ]
+"16584
+[v _TMR0L TMR0L `VEuc  1 e 1 @1436 ]
+[s S94 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"17004
+[s S100 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S106 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S112 . 1 `S94 1 . 1 0 `S100 1 . 1 0 `S106 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES112  1 e 1 @1438 ]
+[s S135 . 1 `uc 1 CKPS 1 0 :4:0 
+`uc 1 ASYNC 1 0 :1:4 
+`uc 1 CS 1 0 :3:5 
+]
+"17111
+[s S139 . 1 `uc 1 CKPS0 1 0 :1:0 
+`uc 1 CKPS1 1 0 :1:1 
+`uc 1 CKPS2 1 0 :1:2 
+`uc 1 CKPS3 1 0 :1:3 
+`uc 1 T0ASYNC 1 0 :1:4 
+`uc 1 CS0 1 0 :1:5 
+`uc 1 CS1 1 0 :1:6 
+`uc 1 CS2 1 0 :1:7 
+]
+[s S148 . 1 `uc 1 T0CKPS 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS 1 0 :3:5 
+]
+[s S152 . 1 `uc 1 T0CKPS0 1 0 :1:0 
+`uc 1 T0CKPS1 1 0 :1:1 
+`uc 1 T0CKPS2 1 0 :1:2 
+`uc 1 T0CKPS3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS0 1 0 :1:5 
+`uc 1 T0CS1 1 0 :1:6 
+`uc 1 T0CS2 1 0 :1:7 
+]
+[u S161 . 1 `S135 1 . 1 0 `S139 1 . 1 0 `S148 1 . 1 0 `S152 1 . 1 0 ]
+[v _T0CON1bits T0CON1bits `VES161  1 e 1 @1439 ]
+[s S193 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"19238
+[u S198 . 1 `S193 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES198  1 e 1 @1814 ]
+[s S39 . 1 `uc 1 NDIV 1 0 :4:0 
+`uc 1 NOSC 1 0 :3:4 
+]
+"20976
+[s S42 . 1 `uc 1 NDIV0 1 0 :1:0 
+`uc 1 NDIV1 1 0 :1:1 
+`uc 1 NDIV2 1 0 :1:2 
+`uc 1 NDIV3 1 0 :1:3 
+`uc 1 NOSC0 1 0 :1:4 
+`uc 1 NOSC1 1 0 :1:5 
+`uc 1 NOSC2 1 0 :1:6 
+]
+[u S50 . 1 `S39 1 . 1 0 `S42 1 . 1 0 ]
+[v _OSCCON1bits OSCCON1bits `VES50  1 e 1 @2189 ]
+[s S65 . 1 `uc 1 HFFRQ 1 0 :3:0 
+]
+"21317
+[s S67 . 1 `uc 1 HFFRQ0 1 0 :1:0 
+`uc 1 HFFRQ1 1 0 :1:1 
+`uc 1 HFFRQ2 1 0 :1:2 
+]
+[u S71 . 1 `S65 1 . 1 0 `S67 1 . 1 0 ]
+[v _OSCFRQbits OSCFRQbits `VES71  1 e 1 @2195 ]
+"29012
+[v _RA5PPS RA5PPS `VEuc  1 e 1 @7957 ]
+"36800
+"36800
+[v _TMR0IE TMR0IE `VEb  1 e 0 @14517 ]
+"36803
+[v _TMR0IF TMR0IF `VEb  1 e 0 @14437 ]
+"56 C:\Users\DELL\MPLABXProjects\radioscope_level_alarm.X\newmain.c
+[v _levels levels `[6]ui  1 e 12 0 ]
+"57
+[v _times times `[6]ui  1 e 12 0 ]
+"63
+[v _result result `i  1 e 2 0 ]
+"64
+[v _millisec millisec `i  1 e 2 0 ]
+"65
+[v _reading reading `i  1 e 2 0 ]
+"67
+[v _offtimer offtimer `i  1 e 2 0 ]
+"68
+[v _ontimer ontimer `i  1 e 2 0 ]
+"69
+[v _powerontime powerontime `i  1 e 2 0 ]
+"71
+[v _main main `(v  1 e 1 0 ]
+{
+"137
+} 0
+"167
+[v _pwm_set pwm_set `(v  1 e 1 0 ]
+{
+[v pwm_set@value value `ui  1 p 2 6 ]
+"172
+} 0
+"155
+[v _pwm_init pwm_init `(v  1 e 1 0 ]
+{
+"166
+} 0
+"146
+[v _adc_read adc_read `(i  1 e 2 0 ]
+{
+"154
+} 0
+"139
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"145
+} 0
+"175
+[v _my_isr_routine my_isr_routine `II(v  1 e 1 0 ]
+{
+"208
+} 0
